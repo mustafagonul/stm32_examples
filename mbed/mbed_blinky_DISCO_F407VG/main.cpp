@@ -1,11 +1,12 @@
 #include <mbed.h>
 
 
+DigitalOut myled(LED3);
+
+
 int main()
 {
-  DigitalOut myled(LED3);
-
-  while(1) {
+  while (true) {
     myled = 1;
     wait(0.2);
 
@@ -18,16 +19,9 @@ int main()
 
 
 // Other functions that are necessary for building
-extern "C" int __wrap_main();
-
-extern "C" int _start()
-{
-  return __wrap_main();
-}
-
 extern "C" int __real_main()
 {
-  return main();
+  return 0;
 }
 
 
