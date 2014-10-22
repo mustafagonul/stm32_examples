@@ -2,7 +2,7 @@
 #include <SDFileSystem.h>
 
 
-SDFileSystem sd(PB_0, PB_1, PB_2, PB_3, "sd"); // the pinout on the mbed Cool Components workshop board
+SDFileSystem sd(PA_7, PA_6, PA_5, PE_7, "sd"); // the pinout on the mbed Cool Components workshop board
 
 
 int main()
